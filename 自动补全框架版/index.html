@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>自动补全框架版</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/nodom-full.js"></script>
+</head>
+
+<body>
+    <div class="el-plugin">
+        <div class="inputAuto">
+            <div class="wrap">
+                <input type="text" class="input"  e-input="start" spellcheck="false">
+            </div>
+            <div class="infor" x-show="flag" >
+                <li x-repeat="results" x-class="{'check':'check'}" e-click="check">{{txt}}</li>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/index.js"></script>
+</html>

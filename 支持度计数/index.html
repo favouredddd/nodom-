@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>支持度计数</title>
+</head>
+
+<body>
+</body>
+<script src="index.js"></script>
+<script>
+;
+(function() {
+    var myCount = function() {
+        var me = this;
+        me.table = [];
+        me.list = [
+            ["面包", "牛奶"],
+            ["面包", "尿布", "啤酒", "鸡蛋"],
+            ["牛奶", "尿布", "可乐", "面包"],
+            ["面包", "牛奶", "尿布", "啤酒"],
+            ["面包", "牛奶", "尿布", "可乐"]
+        ];
+        me.k = 3;
+        me.resultList=[];
+        me.all = 3;
+        me.key = [];
+        me.tem = me.list;
+        me.getKey();
+        me.tem = [];
+        me.key.forEach(i => {
+            me.tem.push([i]);
+        });
+        me.getCount();
+        me.start();
+    };
+    myCount.prototype = {
+        contructor: myCount,
+        start: function() {
+            var me = this;
+            while (me.k > 1) {
+                me.birth();
+                me.getCount();
+                me.getKey();
+                me.k--;
+            };
+            me.result = me.copy(me.tem);
+            me.birthRule();
+        },
+        birthRule: function() {
+            var me = this;
+            me.getKey();
+            me.tem = [];
+            me.key.forEach(i => {
+                me.tem.push([i]);
+            });
+            while (me.k < 3) {
+                me.birth();
+                me.k++;
+            }
+            me.getResult();
+        },
+        getResult:function(){
+        	var me=this;
+        	//去掉最后一个元素,因为是频繁项集合
+        	var r=me.resultList.pop();
+        	me.resultList.push(r);
+        	me.resultList.forEach(i=>{
+        		me.table.push({list:i,total:i.all,num:r,per:r.all/i.all});
+        	});
+        	console.log(me.table);
+        	console.log(me.resultList);
+        },
+        getKey: function() {
+            var me = this;
+            me.key = [];
+            me.tem.forEach(i => {
+                i.forEach(it => {
+                    me.key.push(it);
+                });
+            });
+            me.key = Array.from(new Set(me.key));
+        },
+        copy: function(d) {
+            var me = this;
+            var tem = [];
+            d.forEach(i => {
+                var t = i.concat([]);
+                if (i.all)
+                    t.all = i.all
+                tem.push(t);
+            });
+            // console.log(tem)
+            return tem;
+        },
+        birth: function() {
+            var me = this;
+            var result = [];
+            me.key.forEach(i => {
+                var tem = [];
+                me.tem.forEach(it => {
+                    if (it.indexOf(i) === -1) {
+                        result.push(it.concat(i));
+                    }
+                });
+                // result.push(tem);
+            });
+            me.tem = me.deleSome(result);
+        },
+        deleSome: function(data) {
+            var me = this;
+            var r = [];
+            for (var i = 0; i < data.length - 1; i += 1) {
+                for (var j = i + 1; j < data.length; j += 1) {
+                    var count = 0;
+                    data[i].forEach(it => {
+                        if (data[j].indexOf(it) !== -1) {
+                            count += 1;
+                        }
+                    });
+                    if (count === data[i].length) {
+                        r.push(j);
+                    }
+                }
+            }
+            r = Array.from(new Set(r));
+            r.forEach(i => {
+                data[i] = 0;
+            });
+            for (var i = 0; i < data.length; i += 1) {
+                if (data[i] === 0) {
+                    data.splice(i, 1);
+                    i--;
+                }
+            };
+            return data;
+        },
+        getCount: function() {
+            var me = this;
+            me.tem.forEach(i => {
+                i.all = 0;
+                me.list.forEach(it => {
+                    var k = 0;
+                    it.forEach(j => {
+                        if (i.indexOf(j) !== -1) {
+                            k++;
+                        }
+                    });
+                    if (k === i.length) {
+                        i.all += 1;
+                    }
+                })
+            });
+            for (var i = 0; i < me.tem.length; i += 1) {
+                if (me.tem[i].all < me.all) {
+                    me.tem.splice(i, 1);
+                    i--;
+                }
+            }
+            me.tem.forEach(i=>{
+            	me.resultList.push(i);
+            })
+        }
+    }
+    new myCount();
+})()
+</script>
+
+</html>
