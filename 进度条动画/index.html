@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>svs圆环</title>
+	<link rel="stylesheet" href="css/index.css">
+	<script src="js/nodom-full.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+	<div class="el-svg-1">
+		<div class="content">
+		<div class="svg">
+			<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="200" height="200" viewBox="0,0,200,200">
+    	    <path d="M 100,100 m0,-{{r}} a {{r}},{{r}},0,1,1,0,{{2*r}}  a {{r}},{{r}},0,1,1,0,{{-2*r}}" stroke={{color_1}} stroke-width="10" style="fill-opacity:0;"/>
+    	    <path d="M 100,100 m0,-{{r}} a {{r}},{{r}},0,1,1,0,{{2*r}}  a {{r}},{{r}},0,1,1,0,{{-2*r}}" stroke={{color_2}} stroke-width="10" style="fill-opacity:0;stroke-dasharray:{{r1}}px,{{r2}}px;stroke-dashoffset:0px;transition: stroke-dashoffset 0.1s ease 0s, stroke-dasharray {{t}}s ease 0s, stroke 0.1s, stroke-width 0.06s ease 0.1s;stroke-linecap:round"/>
+    </svg>
+		</div>
+		<div class="input">
+			<div class="plus" e-click="add">+</div>
+			<div class="dele" e-click="dele">-</div>
+		</div>
+		<div class="num">{{10*per/10}}%
+		</div>
+	</div>
+	</div>
+</body>
+<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
+	<title>2048</title>
+	<link rel="stylesheet" href="css/index.css">
+	<script src="js/nodom-full.js"></script>
+</head>
+<body> 
+	<div class="wrap el-wrap">
+		<div class="btn">
+			<div class="lable">分数</div>
+			<div class="number">{{count}}</div>
+			<div class="reverse" e-click="start">重开</div>
+		</div>
+		<div class="itemContainer">
+			<div x-repeat="dom" style="background-color: {{color}}">{{txt}}</div>
+		</div>
+	</div>
+</body>
+<script src="js/index.js"></script>
+</html>

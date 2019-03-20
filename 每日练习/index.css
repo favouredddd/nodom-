@@ -1,0 +1,40 @@
+*{
+	margin:0;
+	padding:0;
+	user-select: none;
+}
+.container{
+	position: relative;
+	width:20rem;
+	height: 12rem;
+	overflow-x: hidden;
+}
+.container .imgContainer{
+	position: absolute;
+	height: 100%;
+	font-size: 0;
+}
+.container .imgContainer>img{
+	height: 100%;
+}
+.container .spanContainer{
+	left:50%;
+	transform: translateX(-50%);
+	z-index: 10;
+	position: absolute;
+	bottom: 10px;
+	width: 50%;
+	height: 20px;
+	display: flex;
+	justify-content: space-around;
+}
+.container .spanContainer>span{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border-radius:50%;
+	background-color: #fff;
+}
+.container .spanContainer .check{
+	background-color: red;
+}

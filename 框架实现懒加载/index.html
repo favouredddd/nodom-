@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0, user-scalable=no" Access-Control-Allow-Origin="*">
+	<title>懒加载</title>
+	<script src="js/nodom-full.js"></script>
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+	<div class="el-load">
+	<div class="container" e-scroll="myscroll">
+		<div class="item" x-repeat="img">
+			<img src="{{src|no_src:404}}">
+		</div>
+	</div>
+	</div>
+</body>
+<script src="js/index.js"></script>
+</html>

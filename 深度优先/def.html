@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>深度优先算法</title>
+</head>
+
+<body>
+</body>
+<script>
+;
+(function() {
+    var def = function() {
+        var me = this;
+        me.data = {
+            color_1: '#333333',
+            color_2: '#1890ff',
+            one: 1,
+            arr: [{
+                click: false,
+                txt: "parent-1",
+                show: true,
+                arr: [{
+                    click: false,
+                    txt: "child-1",
+                    show: false,
+                    arr: [{
+                        click: false,
+                        txt: "child-1-1",
+                        show: false
+                    }, {
+                        click: false,
+                        txt: "child-1-2",
+                        show: false
+                    }]
+                }, {
+                    click: false,
+                    txt: "child-2",
+                    show: false
+                }, {
+                    click: false,
+                    txt: "child-3",
+                    show: false
+                }, {
+                    click: false,
+                    txt: "child-4",
+                    show: false
+                }]
+            }, {
+                click: false,
+                txt: "parent-2",
+                show: true
+            }, {
+                click: false,
+                txt: "parent-3",
+                show: true
+            }, {
+                click: false,
+                txt: "parent-4",
+                show: true
+            }]
+        }
+        me.key = "child-1-1"
+        me.r = {
+            arr: [],
+            count:0
+        };
+        me.start(me.r, me.data.arr);
+        console.log(me)
+    };
+    def.prototype = {
+        start: function(p, arr) {
+            var me = this;
+            var r;
+            for (var i = 0; i < arr.length; i += 1) {
+                me.r.arr.push(p);
+                 me.r.count+=1;
+                if (arr[i].arr) {
+                    r = me.start(arr[i], arr[i].arr);
+                }
+                if (arr[i].txt === me.key || r) {
+                    return 1;
+                }
+                me.r.count-=1;
+                me.r.arr.pop();
+            };
+        }
+    };
+    new def()
+})()
+</script>
+
+</html>
