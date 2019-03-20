@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>广度优先算法</title>
+</head>
+
+<body>
+</body>
+<script>
+;
+(function() {
+    var def = function() {
+        var me = this;
+        me.data = {
+            color_1: '#333333',
+            color_2: '#1890ff',
+            one: 1,
+            txt: "node",
+            arr: [{
+                click: false,
+                txt: "parent-1",
+                show: true,
+                arr: [{
+                    click: false,
+                    txt: "child-1",
+                    show: false,
+                    arr: [{
+                        click: false,
+                        txt: "child-1-1",
+                        show: false
+                    }, {
+                        click: false,
+                        txt: "child-1-2",
+                        show: false
+                    }]
+                }, {
+                    click: false,
+                    txt: "child-2",
+                    show: false
+                }, {
+                    click: false,
+                    txt: "child-3",
+                    show: false
+                }, {
+                    click: false,
+                    txt: "child-4",
+                    show: false
+                }]
+            }, {
+                click: false,
+                txt: "parent-2",
+                show: true
+            }, {
+                click: false,
+                txt: "parent-3",
+                show: true
+            }, {
+                click: false,
+                txt: "parent-4",
+                show: true
+            }]
+        }
+        me.key = "child-1-1"
+        me.r = {
+            count: 0,result:[]
+        };
+        me.arr = [];
+        me.start(me.r);
+        console.log(me.r);
+    };
+    def.prototype = {
+        start: function(p) {
+            var me = this;
+            me.arr.push(me.data);
+            while (me.arr.length) {
+                p.count += 1;
+                var tem = me.arr[0];
+                if (tem.arr) {
+                    tem.arr.forEach(i => {
+                        me.arr.push(i);
+                    });
+                }
+                if (tem.txt === me.key) {
+                    me.r.result.push(tem);
+                    break;
+                }
+               me.r.result.push(me.arr.shift());
+            }
+        }
+    };
+    new def()
+})()
+</script>
+
+</html>

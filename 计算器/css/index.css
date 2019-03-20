@@ -1,0 +1,61 @@
+*{
+	user-select: none;
+	margin:0;
+	padding: 0;
+}
+.elWrap{
+	padding-top: 2rem;
+	margin:0 auto;
+	width: 16rem;
+	height: 25rem;
+}
+.elWrap .display{
+	font-size: 0;
+}
+.elWrap .display .textarea{
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	overflow:hidden;
+	line-height: 4rem;
+	resize:none;
+	display: inline-block;
+	width: 16rem;
+	height: 4rem;
+	box-sizing: border-box;
+	border-radius: 5px;
+	border:1px solid #ccc;
+}
+.elWrap .list{
+	cursor:pointer;
+	margin-top: .6rem;
+	overflow:hidden;
+}
+.elWrap .list >div{
+	float: left;
+	text-align: center;
+	width: 4rem;
+	height: 4rem;
+	line-height: 4rem;
+	box-sizing: border-box;
+	border:1px solid #cccccc42;
+}
+.elWrap .list .item{
+	background-color: #fafafa82;
+}
+.elWrap .list .item:hover{
+	background-color: #ff9800b8!important;
+}
+.elWrap .list .symbol{
+	background-color: #fafafa82;
+}
+.elWrap .list .symbol:hover{
+	background-color: #03a9f4c9!important;
+}
+.elWrap .list .ensure{
+	width:8rem!important;
+	background-color: #fafafa82;
+}
+.elWrap .list .ensure:hover{
+	background-color: #03a9f4c9!important;
+}

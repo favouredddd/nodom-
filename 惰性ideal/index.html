@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
+	<title>惰性ideal</title>
+	<style>
+	*{
+		margin:0;
+		padding: 0;
+		user-select: none;
+	}
+		.wrap{
+			overflow-y: auto;
+			/*position: fixed;*/
+			/*top:0;*/
+			/*bottom: 0;*/
+			/*left:0;*/
+			/*right:0;*/
+			box-sizing: border-box;
+			padding-top: 20rem;
+			height: 80rem;
+		}
+		.wrap .img{
+			overflow:hidden;
+			position: relative;
+			width: 20rem;
+			height: 10rem;
+			background-image: url(imgs/1.jpg);
+			background-size: 100% 100%;
+		}
+		.wrap .img .display{
+			box-sizing: border-box;
+			display: inline-block;
+			border-radius: 50%;
+			left:0px;
+			background: url(imgs/2.jpg) no-repeat;
+			position:absolute;
+			top:0px;
+			background-size: contain;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="img">
+			<div class="display"></div>
+		</div>
+	</div>
+</body>
+<script src="index.js"></script>
+</html>

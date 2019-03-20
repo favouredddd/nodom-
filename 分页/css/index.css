@@ -1,0 +1,84 @@
+*{
+	padding: 0;
+	margin:0;
+	user-select:none;
+}
+.clear{
+	clear: both;
+	display: block;
+}
+.container {
+	float:right;
+	margin-right: 100px;
+	padding: 20px 0px;
+}
+.container .pageBtn>div{
+	margin-left:3px;
+	color:#999;
+	text-align: center;
+	border-radius: 50%;
+	height: 18px;
+	line-height: 18px;
+	width: 18px;
+	font-size: 12px;
+	margin-top: 6px;
+	float:left;
+}
+.container .pageBtn .check{
+	background-color: #5eaee3;
+	color:#fff!important;
+}
+.container .pageBtn:after{
+	content:"";
+	display: block;
+	clear:both;
+}
+.container >div{
+	cursor:pointer;
+	margin-right: 5px;
+	float:left;
+
+}
+.container .pre{
+	margin-top: 6px;
+	background: url("../imgs/go_pre.png");
+	background-size: cover;
+	height: 18px;
+	line-height: 18px;
+	width: 18px;
+	font-size: 12px;
+}
+.container .next{
+	margin-top: 6px;
+	background: url("../imgs/go_next.png");
+	background-size: cover;
+	height: 18px;
+	line-height: 18px;
+	width: 18px;
+	font-size: 12px;
+}
+.container .jump{
+	font-size: 0;
+}
+.container .jump>*{
+	margin-right: 5px;
+	font-size: 14px;
+}
+.container .jump>span{
+	height: 20px;
+	line-height: 20px;
+	display: inline-block;
+}
+.container .jump>input{
+	border:1px solid #d8dce5;
+	border-radius:4px;
+	outline: none;
+	line-height: 1;
+	width: 30px;
+	padding: 5px;
+	text-align: center;
+}
+.container .jump .ensure{
+	display: inline-block;
+	text-align: center;
+}

@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.top{
+	box-sizing: border-box;
+	width: 100%;
+	padding: 20px;
+	background-color: #666;
+	color:#fff;
+	height: 80px;
+}
+.top .img{
+	height: 40px;
+	float:left;
+}
+.top .right{
+	float:right;
+	padding-top:10px;
+}
+.top .right a{
+	font-size: 12px;
+	height: 20px;
+	line-height: 20px;
+	margin-right: 20px;
+	cursor:pointer;
+}
+.canvasct{
+	position: relative;
+}

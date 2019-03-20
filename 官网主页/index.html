@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Nodom-plugin</title>
+	<link rel="stylesheet" href="index.css">
+	<link type="favicon" rel="shortcut icon" href="nodom.ico" />
+	<script src="nodom-full.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+	<div class="page-home" style='overflow-x: hidden;'>
+		<div class="top">
+			<img src="logo-top.png" alt="logo" class="img">
+			<div class="right">
+				<a x-repeat='menu' x-route='{{route}}'>{{name}}</a>
+			</div>
+		</div>
+		<div x-router></div>
+		<div class="canvasct">
+			<canvas class='canvas'></canvas>
+			<div class='down'>下载</div>
+		</div>
+	</div>
+</body>
+<script src="index.js" type="text/javascript" charset="utf-8" ></script>
+</html>
