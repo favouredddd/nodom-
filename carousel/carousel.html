@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>轮播图终极版</title>
+    <link rel="stylesheet" href="carousel.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <script src="nodom-full.js"></script>
+</head>
+
+<body>
+    <div class="el-pluagin">
+        <div class="container">
+            <div class="el-carousel" x-model="carousel" e-swipeLeft="goRight" e-swipeRight="goLeft">
+               <div class="wrap" style="left:{{d}}rem">
+                    <img src="{{src1}}" class="myCarousel">
+                </div>
+                <div class="spanWrap" ref="span">
+                        <span x-repeat="imgs" class="span" e-click="turn" index="{{$index}}"></span>
+                </div>
+                </div>
+            </div>
+        </div>
+</body>
+<script src="carousel.js"></script>
+
+</html>

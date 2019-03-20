@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>start</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="content">
+        	<span class="start"></span>
+        </div>
+    </div>
+</body>
+<script>
+document.querySelector(".content").addEventListener("mouseover", function(e) {
+    document.querySelector(".start").style.width = e.offsetX + 'px';
+}, false);
+document.querySelector(".content").addEventListener("mousemove", function(e) {
+	console.log(e.offsetX);
+	console.log(e.target);
+    document.querySelector(".start").style.width = e.offsetX + 'px';
+}, false);
+document.querySelector(".content").addEventListener("mouseout",function(e){
+	document.querySelector(".start").style.width =120 + 'px';
+},false);
+</script>
+
+</html>

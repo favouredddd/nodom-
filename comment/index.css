@@ -1,0 +1,13 @@
+.content{
+	background-image:url('start.svg');
+	width: 120px;
+	height: 20px;
+	background-size: 100% 100%;
+}
+.content >span{
+	width: 120px;
+	height: 20px;
+	background-image:url("yell.svg");
+	display: inline-block;
+	background-size: 120px 20px;
+}
