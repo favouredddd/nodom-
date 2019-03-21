@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+ -webkit-touch-callout:none; 
+}
+:root {
+  --width: 700px;
+  --height: 500px;
+  --setWidth: 300px;
+}
+@media screen and (max-width: 800px) {
+  :root {
+    --width: 14rem!important;
+    --height: 9rem!important;
+    --setWidth: 6.4rem!important;
+  }
+}
+.magn {
+  position: relative;
+  height: var(--height);
+}
+@media screen (max-width: 800px) {
+  .magn {
+    height: var(--height);
+  }
+}
+.magn .img {
+  position: relative;
+  width: var(--setWidth);
+  height: var(--setWidth);
+  border: solid 1px #eaeaea;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.magn .img img {
+  position: absolute;
+  width: var(--setWidth);
+  height: var(--setWidth);
+}
+.magn ul {
+  margin-top: 10px;
+  list-style-type: none;
+}
+.magn ul li {
+  width: calc(var(--setWidth) / 3);
+  height: calc(var(--setWidth) / 3);
+  float: left;
+  margin-right: 5px;
+}
+.magn ul li img {
+  width: calc(var(--setWidth) / 3);
+  height: calc(var(--setWidth) / 3);
+}
+.magn ul:after {
+  position: absolute;
+  content: "";
+  display: block;
+  clear: both;
+}
+.magn .leftWrap {
+  z-index: 101;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: var(--setWidth);
+  width: var(--setWidth);
+}
+.magn .leftWrap .mask {
+  z-index: 1001;
+  background-color: #fff;
+  opacity: .5;
+  height: 100%;
+  width:100%;
+}
+.magn .leftWrap .magnWrap {
+  z-index: 1000;
+  position: absolute;
+  height: calc(var(--setWidth) / 2);
+  width: calc(var(--setWidth) / 2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+}
+.magn .leftWrap .magnWrap .eventMagn {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  position: relative;
+}
+.magn .leftWrap .magnWrap .eventMagn img {
+  height: 200%;
+  width: 200%;
+  position: absolute;
+}
+.magn .eventWrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  cursor: crosshair;
+  width: var(--setWidth);
+  height: var(--setWidth);
+}
+.magn .rightWrap {
+  top: 0px;
+  position: absolute;
+  left: 360px;
+  width: var(--setWidth);
+  height: var(--setWidth);
+  overflow: hidden;
+}
+.magn .rightWrap .imgWrap {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.magn .rightWrap .imgWrap img {
+  width: calc(var(--setWidth) * 2);
+  height: calc(var(--setWidth) * 2);
+  position: absolute;
+}

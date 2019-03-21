@@ -1,0 +1,22 @@
+<div class="tableS">
+    <div class="clon clon-header">
+        <div class="ip">ip</div>
+        <div class="count">次数</div>
+        <div class="time">时间</div>
+        <div class="path">action</div>
+        <div class="deal">操作</div>
+    </div>
+	<div x-repeat="list" class="clon">
+        <div class="ip">{{ip}}</div>
+        <div class="count">{{count}}</div>
+		<div class="time">{{time}}</div>
+        <div class="path">{{path}}}</div>
+        <div class="deal" e-click="delete">删除</div>
+	</div>
+</div>
+<div class="page-box">
+    <div class="page">
+        <div x-plugin="paging_1"></div>
+    </div>
+    <div class="clear"></div>
+</div>

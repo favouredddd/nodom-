@@ -1,0 +1,107 @@
+<div class="plugin-type el-plugin-type">
+                                <div class="plugin-name">{{name}}插件</div><div class='plugin-item'>
+                                <div class="plugin-content el-plugin-12001"><div class="plugin-switcher-1" style="width: 50px;height: 30px;">
+                                        <div x-plugin='plugin_12001' dataItem='switcher' openColor="open_color" closeColor="close_color" btnColor="btn_color"></div>
+                                   </div>
+                                </div>
+                                <br>
+                                <div class="instruction-title-sec">HTML代码</div>
+                                <br><pre class="instruction-code">
+                                        <pre><<span class="element">div</span> <span class="attr">class</span>='plugin-switcher-1' <span class="attr">style</span>="width: 50px;height: 30px;"></pre>
+                                        <pre>      <<span class="element">div</span> <span class="attr">class</span>="plugin-switcher" <span class="attr">x-plugin</span>="switcher" <span class="attr">dataItem</span>="switcher" <span class="attr">openColor</span>="open_color" <span class="attr">closeColor</span>="close_color" <span class="attr">btnColor</span>="btn_color"><<span class="element">/div></span></pre>
+                                        <pre><<span class="element">/div</span>></pre>
+                                    </pre><br>
+                                <div class="instruction-title-sec">JS代码</div>
+                                <br><pre class="instruction-code">
+                                    <pre><span>{</span></pre>
+                                    <pre><span>      name: 'switcher',</span>      <span class="comment">/*插件模块的模块名称*/</span></pre>
+                                    <pre><span>      el: '.plugin-switcher',</span>      <span class="comment">/*插件渲染容器*/</span></pre>
+                                    <pre><span>      data: {</span>      <span class="comment">/*配置参数项*/</span></pre>
+                                    <pre><span>            switcher: true,</span>      <span class="comment">/*开关状态*/</span></pre>
+                                    <pre><span>            open_color: '#4BD763',</span>      <span class="comment">/*开关打开时颜色*/</span></pre>
+                                    <pre><span>            close_color: "#F9F9F9",</span>      <span class="comment">/*开关关闭时颜色*/</span></pre>
+                                    <pre><span>            btn_color: "#ffffff"</span>      <span class="comment">/*开关按钮颜色*/</span></pre>
+                                    <pre><span>     }</pre>
+                                    <pre><span>}</span></pre><br>
+                                <div class='plugin-explain'>
+                                    <p class="instruction-title-sec">插件说明:</p>
+                                    <br>
+                                    <p class='explain'>这是一款模仿苹果开关的switcher插件，通过点击进行开关变换。使用插件时需设置插件渲染容器父元素的宽度、高度，switcher插件根据父元素宽度、高度自适应设置自己的高度、宽度，本插件可自定义配置项包括：打开颜色、关闭颜色、按钮颜色。</p>
+                                </div>
+                            </div>
+                            <div class='plugin-item'>
+                                <div class="plugin-content el-plugin-12002"><div class="plugin-switcher-2">
+                                        <div x-plugin='plugin_12002' dataValue='switcher' bgColor="bg_color" shadowColor="shadow_color" btnColor="btn_color"></div>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="instruction-title-sec">HTML代码</div>
+                                <br><pre class="instruction-code">
+                                        <pre><<span class="element">div</span> <span class="attr">class</span>='plugin-switcher-1' <span class="attr">style</span>="width: 50px;height: 30px;"></pre>
+                                        <pre>      <<span class="element">div</span> <span class="attr">class</span>="plugin-switcher" <span class="attr">x-plugin</span>="switcher" <span class="attr">dataItem</span>="switcher" <span class="attr">bgColor</span>="bg_color" <span class="attr">shadowColor</span>="shadow_color" <span class="attr">btnColor</span>="btn_color"><<span class="element">/div></span></pre>
+                                        <pre><<span class="element">/div</span>></pre>
+                                    </pre><br>
+                                <div class="instruction-title-sec">JS代码</div>
+                                <br><pre class="instruction-code">
+                                    <pre><span>{</span></pre>
+                                    <pre><span>      name: 'switcher',</span>      <span class="comment">/*插件模块的模块名称*/</span></pre>
+                                    <pre><span>      el: '.plugin-switcher',</span>      <span class="comment">/*插件渲染容器*/</span></pre>
+                                    <pre><span>      data: {</span>      <span class="comment">/*配置参数项*/</span></pre>
+                                    <pre><span>            switcher: true,</span>      <span class="comment">/*开关状态*/</span></pre>
+                                    <pre><span>            bg_color: '#292827',</span>      <span class="comment">/*开关背景颜色*/</span></pre>
+                                    <pre><span>            shadow_color: "#FF9900",</span>      <span class="comment">/*开关投影颜色*/</span></pre>
+                                    <pre><span>            btn_color: "#ffffff"</span>      <span class="comment">/*开关按钮颜色*/</span></pre>
+                                    <pre><span>     }</pre>
+                                    <pre><span>}</span></pre><br>
+                                <div class='plugin-explain'>
+                                    <p class="instruction-title-sec">插件说明:</p>
+                                    <br>
+                                    <p class='explain'>这是一个3D switch插件，通过点击实现开关''on''与''off''的转换。本插件可自定义配置项包括：打开颜色、关闭颜色、背景颜色、字体颜色。</p>
+                                </div>
+                            </div>
+                            <div class='plugin-item'>
+                                <div class="plugin-content el-plugin-12003"><div class="plugin-switcher-3" style="width: 50px;height: 50px;">
+                                        <div x-plugin='plugin_12003'  dataItem='switcher' openColor="open_color" closeColor="close_color"></div>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="instruction-title-sec">HTML代码</div>
+                                <br><pre class="instruction-code">
+                                        <pre><<span class="element">div</span> <span class="attr">class</span>='plugin-switcher-1' <span class="attr">style</span>="width: 50px;height: 30px;"></pre>
+                                        <pre>      <<span class="element">div</span> <span class="attr">class</span>="plugin-switcher" <span class="attr">x-plugin</span>="switcher" <span class="attr">dataItem</span>="switcher" <span class="attr">openColor</span>="open_color" <span class="attr">closeColor</span>="close_color"><<span class="element">/div></span></pre>
+                                        <pre><<span class="element">/div</span>></pre>
+                                    </pre><br>
+                                <div class="instruction-title-sec">JS代码</div>
+                                <br><pre class="instruction-code">
+                                    <pre><span>{</span></pre>
+                                    <pre><span>      name: 'switcher',</span>      <span class="comment">/*插件模块的模块名称*/</span></pre>
+                                    <pre><span>      el: '.plugin-switcher',</span>      <span class="comment">/*插件渲染容器*/</span></pre>
+                                    <pre><span>      data: {</span>      <span class="comment">/*配置参数项*/</span></pre>
+                                    <pre><span>            switcher: true</span>      <span class="comment">/*开关状态*/</span></pre>
+                                    <pre><span>     }</pre>
+                                    <pre><span>}</span></pre>
+                                 </pre><br>
+                                <div class='plugin-explain'>
+                                    <p class="instruction-title-sec">插件说明:</p>
+                                    <br>
+                                    <p class='explain'>这是一个3D switch插件，通过点击实现开与关以及颜色变化，使用此插件，需给插件渲染容器的父元素设置宽度和高度。本插件可自定义配置项包括：打开颜色、关闭颜色。</p>
+                                </div>
+                            </div>
+                            <div class='plugin-item'>
+                                <div class="plugin-content el-plugin-12004"><div class="nd-plugin-button-1">
+                                        <div x-plugin="plugin_12004" class="btn-list"></div>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="instruction-title-sec">HTML代码</div>
+                                <br>undefined<br>
+                                <div class="instruction-title-sec">JS代码</div>
+                                <br>undefined<br>
+                                <div class='plugin-explain'>
+                                    <p class="instruction-title-sec">插件说明:</p>
+                                    <br>
+                                    <p class='explain'>这是本系统的按钮模板插件。
+本插件可自定义配置项包括：一列颜色、二列颜色、三列颜色。</p>
+                                </div>
+                            </div>
+                            </div>

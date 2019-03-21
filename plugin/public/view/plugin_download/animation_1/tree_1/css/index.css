@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.el-tree .content .item {
+    cursor: pointer;
+    padding: 2px 0px;
+    padding-left: 20px;
+}
+
+.el-tree .content .ct {
+    overflow: hidden;
+    width: 160px;
+    padding: 2px 0px;
+    position: relative;
+}
+.el-tree .content .wrap{
+    max-height: 0px;
+    transition: max-height 1s;
+} 
+.el-tree .content .show{
+    max-height: 300px!important;
+}
+.el-tree .content .ct .input {
+    box-sizing: border-box;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #d9d9d9;
+    float: left;
+    margin-right: 5px;
+}
+
+.el-tree .content .ct .check {
+    /*background-color: #1890ff;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.el-tree .content .ct .check:after {
+    display: block;
+    position: absolute;
+    content: "";
+  /*  border: 2px solid #fff;
+    border-top: none;
+    border-right: none;
+    left:3px;
+    bottom: 10px;*/
+    background-color:#1890ff;
+    width: 14px;
+    height: 14px;
+    /*transform: rotate(-45deg);*/
+}
+
+.el-tree .content .ct span {
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+    width: 80px;
+    float: left;
+}
+.el-tree .content .ct span:hover{
+    background-color: #bae7ff;
+}
+.el-tree {
+    display: flex;
+    justify-content: center;
+}
+
+.el-tree .content {
+    width: 200px;
+}

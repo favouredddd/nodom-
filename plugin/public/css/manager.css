@@ -1,0 +1,127 @@
+.tableS {
+	background-color: #fff;
+	border: 1px solid #eee;
+	border-radius: 5px;
+	margin: 50px 50px 0px 50px;
+}
+
+@media screen and (max-width: 800px) {
+	.tableS {
+		margin: 1rem !important;
+		margin-bottom: 0 !important;
+	}
+	.tableS .clon {
+		padding: .5rem !important;
+	}
+	.tableS .clon .count {
+		width: 5% !important;
+	}
+	.tableS .clon .deal {
+		width: 15% !important;
+	}
+	.page-box .page {
+		margin-right: .3rem !important;
+	}
+	.nd-plugin-paging {
+		margin: 5px 0px !important;
+		width: 16rem !important;
+		height: 30px !important;
+	}
+	.nd-plugin-paging span {
+		margin-left: 2px !important;
+	}
+	.nd-plugin-paging > div {
+		height: 20px !important;
+		line-height: 20px !important;
+		font-size: 12px !important;
+		padding: 3px !important;
+	}
+	.nd-plugin-paging > span:nth-child(1) {
+		display: none !important;
+	}
+	.nd-plugin-paging > span:nth-child(2) {
+		display: none !important;
+	}
+	.nd-plugin-paging > .letGo {
+		display: none !important;
+	}
+	.nd-plugin-paging > input {
+		display: none !important;
+	}
+	.nd-plugin-paging .go-to {
+		display: none !important;
+	}
+}
+
+.tableS .clon {
+	border-top: 1px solid #eeeeee;
+	padding: 10px 0px;
+	font-size: 12px;
+	display: flex;
+	justify-content: space-around;
+	color: #2f2222;
+}
+
+.tableS .clon:hover {
+	background-color: #67c23a !important;
+	color: #fff;
+}
+
+.tableS .clon-header {
+	font-size: 14px;
+	border: none !important;
+	font-weight: bold;
+	color: #2f2222;
+}
+
+.tableS .clon-header > div {
+	border: none;
+	background-color: transparent !important;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.tableS .clon-header .deal {
+	color: #333 !important;
+}
+.tableS .clon > div {
+	text-align: center;
+	margin: 0 1%;
+	height: 30px;
+	line-height: 30px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.tableS .clon .path {
+	width: 20%;
+}
+
+.tableS .clon .ip {
+	width: 25%;
+}
+
+.tableS .clon .time {
+	width: 18%;
+}
+
+.tableS .clon .count {
+	text-align: center;
+	width: 10%;
+}
+
+.tableS .clon .deal {
+	color: #fff;
+	cursor: pointer;
+	width: 10%;
+	background-color: #409eff;
+	border-radius: 5px;
+	border: 1px solid transparent;
+}
+.page-box {
+}
+.page-box .page {
+	float: right;
+	margin-right: 50px;
+}

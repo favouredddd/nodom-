@@ -1,0 +1,122 @@
+*{
+	margin:0;
+	padding: 0;
+	user-select: none;
+}
+:root{
+	--width: 700px;
+	--height: 500px;
+	--setWidth:300px;
+}
+@media screen and (max-width: 800px) {
+	:root{
+	--width: 20rem!important;
+	--height: 15rem!important;
+	--setWidth:10rem!important;
+  }
+}
+.magn{
+	position: relative;
+	margin: 20px 0 0 20px;
+	height:var(--height);
+	@media screen(max-width: 800px) {
+		height: var(--height)
+	}
+	.img{
+		position: relative;
+		width: var(--setWidth);
+		height: var(--setWidth);
+		border:solid 1px #eaeaea;
+		box-sizing: border-box;
+		overflow:hidden;
+		img{
+			position: absolute;
+			width:  var(--setWidth);
+			height:  var(--setWidth);
+		}
+	}
+	ul{
+		margin-top: 10px;
+		list-style-type: none;
+		li{
+                width:  calc(~"var(--setWidth) / 3");
+				height:  calc(~"var(--setWidth) / 3");
+			float:left;
+			margin-right: 5px;
+			img{
+				width: calc(~"var(--setWidth) / 3");
+				height: calc(~"var(--setWidth) / 3");
+			}
+		}
+		&:after{
+			position: absolute;
+			content:"";
+			display:block;
+			clear:both;
+		}
+	}
+	.leftWrap{
+		z-index: 101;
+		position: absolute;
+		left:0;
+		top:0;
+        height: var(--setWidth);
+		width:var(--setWidth);
+		.mask{
+			z-index: 1001;
+			background-color: #fff;
+			opacity:.5;
+			height: 100%;
+		}
+		.magnWrap{
+			z-index:1000;
+			position:absolute;
+			// border: 1px solid #888;
+            height:calc(~"var(--setWidth) / 2");
+		    width:calc(~"var(--setWidth) / 2");
+			box-shadow: 0 0 10px rgba(0,0,0,.4);
+			overflow:hidden;
+			.eventMagn{
+				box-sizing:border-box;
+                height: 100%;
+			    width:100%;
+			    background-color: #fff;
+				position: relative;
+				img{
+					height: 200%;
+					width:200%;
+					position: absolute;
+				}
+			}
+		}
+	}
+	.eventWrap{
+		position: absolute;
+		top:0;
+		left:0;
+		z-index: 999;
+		width:100%;
+		height: 100%;
+		cursor:crosshair;
+		width: var(--setWidth);
+		height:var(--setWidth);
+	}
+	.rightWrap{
+		top:0px;
+		position: absolute;
+		left:360px;
+		width:var(--setWidth);
+		height: var(--setWidth);
+		overflow:hidden;
+		.imgWrap{
+			width: 100%;
+			height: 100%;
+			position: relative;
+			img{
+				width: calc(~"var(--setWidth) * 2");
+				height:calc(~"var(--setWidth) * 2");
+				position: absolute;
+			}
+		}
+	}
+}

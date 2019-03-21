@@ -1,0 +1,10 @@
+<div class="plugin-list el-plugin-list">
+    <ul class="plugin-types"  x-class="{shows:'display'}">
+        <li x-repeat="plugin_list" x-route="{{path}}" x-class="{'checked': 'active'}" active="active">
+            <a  class="plugin-kind" e-click="display">{{name}}</a>
+        </li>
+    </ul>
+    <div class="plugin-kind-list" x-router></div>
+    <div class="clear"></div>
+    <div class="gotop" e-click="Top" e-tap="Top"></div>
+</div>

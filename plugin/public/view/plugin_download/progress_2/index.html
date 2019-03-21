@@ -1,0 +1,29 @@
+
+    <!--不能拖动-->
+
+<!--用户选择水平显示还是垂直显示-->
+<div class='common-title'>
+    {{name}}</div>
+   <div class="plugin-probar">
+        <div x-plugin="proBar" dataItem="proBar" showItem="percent"  processBgColor="process_bg_color" processPercentColor="process_percent_color" processPercentNum="process_percent_num_color"></div>
+    </div>
+<div class="common-title">配置</div>
+<div class="con-config">
+    <div class="itemss">
+        <span class="span">字体颜色</span>
+        <input type="color" class='input' x-field="process_percent_num_color">
+    </div>
+    <div class="itemss">
+        <span class="span">百分比颜色</span>
+        <input type="color" class='input' x-field="process_percent_color">
+    </div>
+     <div class="itemss">
+        <span class="span">背景颜色</span>
+        <input type="color" class='input' x-field="process_bg_color">
+    </div>
+</div>
+<div class="con-eusure">
+    <div class="config-finish less" e-click='ensure'>确认配置(Less)</div>
+    <div class="config-finish" e-click='ensure'>确认配置(Css)</div>
+</div>
+<!--proBar根据用户传的数据进行渲染，根据用户选择显示百分比-->

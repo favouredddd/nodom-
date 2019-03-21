@@ -1,0 +1,33 @@
+﻿<div class="con-header">
+    <img class="logo" src="{{img_log}}" e-click="display">
+    <ul>
+        <li x-repeat="nav_list" x-route="{{path}}" active="active" x-class="{'active': 'active','noPadding':'$index>=3'}">
+            <a>{{name}}</a>
+        </li>
+        <li style="padding:0"> <span class="app" e-click="down"></span></li>
+    </ul>
+</div>
+<div x-router></div>
+<div class="el-show-login" x-if="login">
+    <div class="content">
+        <div class="wrap">
+            <div class="header">
+            	<span class="text">管理员</span>
+            	<div class="delete" e-click="noShow"></div>
+            </div>
+            <div class="item">
+                <div class="span">账户</div>
+                <input class="word" x-field="key"/>
+                <div class="clear"></div>
+            </div>
+            <div class="item">
+                <div class="span">密码</div>
+                <input class="word" x-field="value" type="password"/>
+                <div class="clear"></div>
+            </div>
+            <div class="item">
+            	<div class="ensure" e-click="ensure">确认</div>
+            </div>
+        </div>
+    </div>
+</div>

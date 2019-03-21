@@ -1,0 +1,101 @@
+.carous_ct {
+    margin:0 auto;
+    width: 100%;
+    height: 7.78rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.carous_ct .plugin {
+    perspective: 600px;
+    -webkit-perspective:600px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    /*transform-origin:50% 50% -192px!important;*/
+}
+
+.carous_ct .plugin .carous {
+    display: block;
+/*    transform-origin:50% 50% 192px!important;*/
+    -ms-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    transition: all 3s;
+    width: 100%;
+    height: 100%;
+}
+
+.carous_ct .plugin .carous img {
+    width: 100%;
+    box-sizing: border-box;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.carous_ct .plugin .carous img{
+/*    transform:scale(.8);
+transform-origin:50% 50% 192px;
+-webkit-transform-origin:50% 50% 192px!important;
+-o-transform-origin:50% 50% -192px;
+-ms-transform-origin:50% 50% -192px;
+-moz-transform-origin:50% 50% -192px;*/
+}
+.carous_ct .spancont {
+    width: 100%;
+    position: absolute;
+    bottom: 5px;
+    height: 25px;
+}
+
+.carous_ct .spancont .span {
+    width: 100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.carous_ct .spancont .span span {
+    display: inline-block;
+    height: 13px;
+    width: 13px;
+    background-color: #f8f8f8;
+    margin: 0 5px;
+}
+
+.carous_ct .spancont .span .active {
+    background-color: #f80000;
+}
+.carous_ct .plugin  .left {
+    z-index: 9999;
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    width: 50px;
+    height: 25px;
+    left: 0;
+    background-image: url(../img/left.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: #eeeeee63;
+    /*display: none;*/
+}
+
+.carous_ct .plugin  .right {
+    z-index: 9999;
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    width: 50px;
+    height: 25px;
+    right: 0;
+    background-image: url(../img/right.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: #eeeeee63;
+    /*display: none;*/
+}

@@ -1,0 +1,129 @@
+<div class="plugin-type el-plugin-type">
+                                <div class="plugin-name">{{name}}插件</div>
+                                <p class="explain">本章节主要介绍checkBox插件，通过点击实现选中与未选中，主要有以下四种类型。</p><div class='plugin-item'>
+                                <div class="plugin-content el-plugin-04001"><div class="nd-plugin-check-1">
+                                        <div x-plugin="plugin_04001" dataName="check_data"></div>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="instruction-title-sec">HTML代码</div>
+                                <br><pre class="instruction-code">
+                                        <pre><<span class="element">div</span> <span class="attr">class</span>="plugin-check-1" <span class="attr">x-plugin</span>="check" <span class="attr">dataName</span>="check_data"><<span class="element">/div></span></pre>
+                                    </pre><br>
+                                <div class="instruction-title-sec">JS代码</div>
+                                <br><pre class="instruction-code">
+                                    <pre><span>{</span></pre>
+                                    <pre><span>      name: 'check_1',</span>      <span class="comment">/*插件模块的模块名称*/</span></pre>
+                                    <pre><span>      el: '.plugin-check-4',</span>      <span class="comment">/*插件渲染容器*/</span></pre>
+                                    <pre><span>      data: {</span>      <span class="comment">/*配置参数项*/</span></pre>
+                                    <pre><span>            check_data: {</span>      <span class="comment">/*插件绑定的容器中，绑定的数据对象的名称*/</span></pre>
+                                    <pre><span>                  check_color: '#26a2ff',</span>      <span class="comment">/*选择框选中颜色*/</span></pre>
+                                    <pre><span>                  no_check_color: '#ffffff',</span>      <span class="comment">/*选择框未选中颜色*/</span></pre>
+                                    <pre><span>                  empty_color: '#cccccc',</span>      <span class="comment">/*空白区域颜色*/</span></pre>
+                                    <pre><span>                  is_circle: true,</span>      <span class="comment">/*是否为圆圈*/</span></pre>
+                                    <pre><span>                  size: 10,</span>      <span class="comment">/*选择框宽度、高度*/</span></pre>
+                                    <pre><span>                  is_check: true</span>      <span class="comment">/*选择框是否选中*/</span></pre>
+                                    <pre><span>            }</span></pre>
+                                    <pre><span>     }</pre>
+                                    <pre><span>}</span></pre>
+                                </pre><br>
+                                <div class='plugin-explain'>
+                                    <p class="instruction-title-sec">插件说明:</p>
+                                    <br>
+                                    <p class='explain'>可自定义配置项包括：选中颜色、未选中颜色、空白区域颜色、是圆圈还是正方形、checkBox大小。</p>
+                                </div>
+                            </div>
+                            <div class='plugin-item'>
+                                <div class="plugin-content el-plugin-04002"><div class="nd-plugin-check">
+                                        <div class="content-check" x-plugin="plugin_04002" dataName="check_data"></div>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="instruction-title-sec">HTML代码</div>
+                                <br><pre class="instruction-code">
+                                        <pre><<span class="element">div</span> <span class="attr">class</span>="plugin-check-2" <span class="attr">x-plugin</span>="check" <span class="attr">dataName</span>="check_data"><<span class="element">/div></span></pre>
+                                    </pre><br>
+                                <div class="instruction-title-sec">JS代码</div>
+                                <br><pre class="instruction-code">
+                                    <pre><span>{</span></pre>
+                                    <pre><span>      name: 'check_2',</span>      <span class="comment">/*插件模块的模块名称*/</span></pre>
+                                    <pre><span>      el: '.plugin-check-2',</span>      <span class="comment">/*插件渲染容器*/</span></pre>
+                                    <pre><span>      data: {</span>      <span class="comment">/*配置参数项*/</span></pre>
+                                    <pre><span>            check_data: {</span>      <span class="comment">/*插件绑定的容器中，绑定的数据对象的名称*/</span></pre>
+                                    <pre><span>                  check_color: '#26a2ff',</span>      <span class="comment">/*选择框选中颜色*/</span></pre>
+                                    <pre><span>                  no_check_color: '#aaaaaa',</span>      <span class="comment">/*选择框未选中颜色*/</span></pre>
+                                    <pre><span>                  size: 30,</span>      <span class="comment">/*选择框宽度、高度*/</span></pre>
+                                    <pre><span>                  is_check: true</span>      <span class="comment">/*选择框是否选中*/</span></pre>
+                                    <pre><span>            }</span></pre>
+                                    <pre><span>     }</pre>
+                                    <pre><span>}</span></pre>
+                                </pre><br>
+                                <div class='plugin-explain'>
+                                    <p class="instruction-title-sec">插件说明:</p>
+                                    <br>
+                                    <p class='explain'>可自定义配置项包括：选中颜色、未选中颜色、checkBox大小。</p>
+                                </div>
+                            </div>
+                            <div class='plugin-item'>
+                                <div class="plugin-content el-plugin-04003"><div class="nd-plugin-check">
+                                        <div class="content-check" x-plugin="plugin_04003" dataName="check_data"></div>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="instruction-title-sec">HTML代码</div>
+                                <br><pre class="instruction-code">
+                                        <pre><<span class="element">div</span> <span class="attr">class</span>="plugin-check-3" <span class="attr">x-plugin</span>="check" <span class="attr">dataName</span>="check_data"><<span class="element">/div></span></pre>
+                                    </pre><br>
+                                <div class="instruction-title-sec">JS代码</div>
+                                <br><pre class="instruction-code">
+                                    <pre><span>{</span></pre>
+                                    <pre><span>      name: 'check_3',</span>      <span class="comment">/*插件模块的模块名称*/</span></pre>
+                                    <pre><span>      el: '.plugin-check-3',</span>      <span class="comment">/*插件渲染容器*/</span></pre>
+                                    <pre><span>      data: {</span>      <span class="comment">/*配置参数项*/</span></pre>
+                                    <pre><span>            check_data: {</span>      <span class="comment">/*插件绑定的容器中，绑定的数据对象的名称*/</span></pre>
+                                    <pre><span>                  check_color: '#26a2ff',</span>      <span class="comment">/*选择框选中颜色*/</span></pre>
+                                    <pre><span>                  no_check_color: '#000000',</span>      <span class="comment">/*选择框未选中颜色*/</span></pre>
+                                    <pre><span>                  size: 30,</span>      <span class="comment">/*选择框宽度、高度*/</span></pre>
+                                    <pre><span>                  is_check: true</span>      <span class="comment">/*选择框是否选中*/</span></pre>
+                                    <pre><span>            }</span></pre>
+                                    <pre><span>     }</pre>
+                                    <pre><span>}</span></pre>
+                                </pre><br>
+                                <div class='plugin-explain'>
+                                    <p class="instruction-title-sec">插件说明:</p>
+                                    <br>
+                                    <p class='explain'>可自定义配置项包括：选中颜色、不选颜色、checkBox大小。</p>
+                                </div>
+                            </div>
+                            <div class='plugin-item'>
+                                <div class="plugin-content el-plugin-04004"><div class="nd-plugin-check">
+                                        <div class="content-check" x-plugin="plugin_04004" dataName="check_data"></div>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="instruction-title-sec">HTML代码</div>
+                                <br><pre class="instruction-code">
+                                        <pre><<span class="element">div</span> <span class="attr">class</span>="plugin-check-4" <span class="attr">x-plugin</span>="check" <span class="attr">dataName</span>="check_data"><<span class="element">/div></span></pre>
+                                    </pre><br>
+                                <div class="instruction-title-sec">JS代码</div>
+                                <br><pre class="instruction-code">
+                                    <pre><span>{</span></pre>
+                                    <pre><span>      name: 'check_4',</span>      <span class="comment">/*插件模块的模块名称*/</span></pre>
+                                    <pre><span>      el: '.plugin-check-4',</span>      <span class="comment">/*插件渲染容器*/</span></pre>
+                                    <pre><span>      data: {</span>      <span class="comment">/*配置参数项*/</span></pre>
+                                    <pre><span>            check_data: {</span>      <span class="comment">/*插件绑定的容器中，绑定的数据对象的名称*/</span></pre>
+                                    <pre><span>                  check_color: '#26a2ff',</span>      <span class="comment">/*选择框选中颜色*/</span></pre>
+                                    <pre><span>                  no_check_color: '#aaaaaa',</span>      <span class="comment">/*选择框未选中颜色*/</span></pre>
+                                    <pre><span>                  size: 30,</span>      <span class="comment">/*选择框宽度、高度*/</span></pre>
+                                    <pre><span>                  is_check: true</span>      <span class="comment">/*选择框是否选中*/</span></pre>
+                                    <pre><span>            }</span></pre>
+                                    <pre><span>     }</pre>
+                                    <pre><span>}</span></pre>
+                                </pre><br>
+                                <div class='plugin-explain'>
+                                    <p class="instruction-title-sec">插件说明:</p>
+                                    <br>
+                                    <p class='explain'>可自定义配置项包括：选中颜色、不选颜色、checkBox大小。</p>
+                                </div>
+                            </div>
+                            </div>

@@ -1,0 +1,20 @@
+.nd-plugin-check-1 .check-content{
+	width: 100px;
+	margin:0 auto;
+}
+.nd-plugin-check-1 .check-content .check{
+	border:1px solid #ccc;
+	position: relative;
+	margin: 0 auto;
+}
+.nd-plugin-check-1 .check-content .check::after{
+	display: block;
+	position: absolute;
+	content:"";
+	top:25%;
+	left:25%;
+	width: 50%;
+	height: 50%;
+	border-radius: 100%;
+	background-color: #fff;
+}

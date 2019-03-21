@@ -1,0 +1,30 @@
+.el-animation-4{
+	position: relative;
+	left:0;
+	right: 0;
+	top:0;
+	bottom: 0;
+	display: flex;
+	justify-content: space-around;
+        height:100px;
+}
+.el-animation-4 .content{
+	margin:0px auto;
+	margin-top:10px;
+        display:flex;
+        justify-content:center;
+}
+.el-animation-4 .content span{
+	display: block;
+	float: left;
+	background-color: deepskyblue;
+	border-radius: 5px;
+	transform: skewX(-25deg) scale(.1);
+	animation:animate 0.8s infinite alternate;
+}
+@keyframes animate{
+	to{
+		filter:opacity(1);
+		transform: skewX(-25deg) scale(1);
+	}
+}

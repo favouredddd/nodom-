@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>表格插件</title>
+    <link rel="stylesheet/less" href="css/index.less">
+    <script src="js/less.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/nodom-full.js" type="text/javascript" charset="utf-8"></script>
+
+    <style>
+    html {
+        font-size: 12px;
+    }
+
+    body{
+        margin-top: 20px;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    .el-plugin-table-1 .plugin {
+        width: 70%;
+        min-width: 600px;
+        margin: 0 auto;
+        position: relative;
+        height: 500px;
+        margin: 0 auto;
+        border: 1px solid #ffffff;
+        border-top: none;
+        border-bottom: none;
+        box-sizing: border-box;
+        padding: 10px 20px;
+    }
+
+    </style>
+</head>
+
+<body>
+    <div class='el-plugin-table-1'>
+        <div x-plugin='table' class='plugin' x-model='table'>
+        </div>
+    </div>
+</body>
+<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+
+</html>

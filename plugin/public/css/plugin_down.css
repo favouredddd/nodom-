@@ -1,0 +1,210 @@
+.el-downlist {
+  overflow-x: hidden;
+}
+.el-downlist .down-page {
+  z-index: 10000;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: rgba(3, 3, 3, 0.2);
+}
+.el-downlist .down-page .down-content {
+  box-shadow: 2px 2px 2px rgba(128, 128, 128, 0.35);
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #fff;
+  width: 30%;
+  margin: 200px auto 0;
+}
+.el-downlist .down-page .down-content .head {
+  height: 30px;
+  line-height: 30px;
+  color: #ff5722;
+  padding: 0 10px;
+  font-size: 14px;
+  position: relative;
+}
+.el-downlist .down-page .down-content .head .dele-btn {
+  position: absolute;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  top: 5px;
+}
+.el-downlist .down-page .down-content .head .dele-btn .content {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  line-height: 30px;
+  font-size: 20px;
+  color: #333333;
+  text-align: right;
+  margin-top: -5px;
+}
+.el-downlist .down-page .down-content .list {
+  text-align: center;
+  padding: 20px 0 10px 0;
+  font-size: 12px;
+}
+.el-downlist .down-page .down-content .list a {
+  display: inline-block;
+  background-color: #ff6666;
+  text-decoration: none;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  color: white;
+  cursor: pointer;
+}
+.el-downlist .route::-webkit-scrollbar {
+  /*������������ʽ*/
+  width: 4px;
+  /*�߿�ֱ��Ӧ�����������ĳߴ�*/
+  height: 4px;
+}
+.el-downlist .route::-webkit-scrollbar-thumb {
+  /*����������С����*/
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0 0 5px #0ea6eab5;
+  background: rgba(0, 0, 0, 0.2);
+}
+.el-downlist .route::-webkit-scrollbar-track {
+  /*������������*/
+  -webkit-box-shadow: inset 0 0 5px rgba(192, 192, 192, 0.2);
+  border-radius: 0;
+  background: rgba(0, 0, 0, 0.1);
+}
+@media screen and (max-width: 800px) {
+  .el-downlist .route {
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 99999;
+    padding-left: 0!important;
+    transition: width 0.5s;
+    width: 0rem!important;
+  }
+  .el-downlist .showItem {
+    display: block!important;
+    width: 8rem!important;
+  }
+}
+.el-downlist .top {
+  top: 0!important;
+}
+.el-downlist .route {
+  position: fixed;
+  left: 0;
+  top: 80px;
+  bottom: 0px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-left: 40px;
+  box-sizing: border-box;
+  float: left;
+  width: 20%;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid white;
+  border-right: 1px solid white;
+}
+.el-downlist .route .first-type {
+  cursor: pointer;
+  width: 100%;
+}
+.el-downlist .route .first-type .item-name {
+  box-sizing: border-box;
+  font-size: 18px;
+  padding: 10px;
+  overflow: hidden;
+}
+@media screen and (max-width: 800px) {
+  .el-downlist .route .first-type .item-name {
+    width: 8rem;
+    font-size: 14px !important;
+    padding: 10px !important;
+  }
+}
+.el-downlist .route .first-type .item-name:hover {
+  color: #FF9966;
+}
+.el-downlist .route .first-type .show {
+  color: #FF9966;
+}
+.el-downlist .route .first-type .display {
+  height: auto;
+}
+.el-downlist .route .first-type .no_display {
+  height: 0;
+}
+.el-downlist .route .first-type .none {
+  display: none;
+}
+.el-downlist .route .first-type .no {
+  max-height: 0!important;
+}
+.el-downlist .route .first-type .route-ct {
+  max-height: 200px;
+  transition: max-height 0.5s;
+  width: 100%;
+  overflow: hidden;
+}
+.el-downlist .route .first-type .route-ct .active {
+  color: #FF9966;
+}
+.el-downlist .route .first-type .route-ct div {
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+@media screen and (max-width: 800px) {
+  .el-downlist .route .first-type .route-ct .item {
+    padding-left: 5px !important;
+    font-size: 12px !important;
+    height: 20px;
+    line-height: 20px;
+  }
+}
+.el-downlist .route .first-type .route-ct .item {
+  padding-left: 20px;
+  font-size: 15px;
+  font-size: 12px;
+  height: 40px;
+  line-height: 40px;
+}
+.el-downlist .route .first-type .route-ct .item .item-route {
+  display: block;
+}
+.el-downlist .route .first-type .route-ct .item .route-rename {
+  padding-left: 1rem;
+}
+@media screen and (max-width: 800px) {
+  .el-downlist .router-content {
+    box-sizing: border-box !important;
+    float: left !important;
+    width: 20rem !important;
+  }
+}
+.el-downlist .router-content {
+  box-sizing: border-box;
+  float: right;
+  width: 80%;
+}
+.el-downlist .router-content .chart {
+  width: 100%!important;
+}
+@media screen and (max-width: 800px) {
+  .el-downlist .common-title {
+    height: 20px!important;
+    line-height: 20px!important;
+    font-weight: 600!important;
+    font-size: 12px!important;
+  }
+}
+.el-downlist .common-title {
+  height: 40px;
+  line-height: 40px;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  color: #ff6666;
+}

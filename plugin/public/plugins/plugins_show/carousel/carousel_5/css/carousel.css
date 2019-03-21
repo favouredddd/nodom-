@@ -1,0 +1,63 @@
+.el-carousel-4 {
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+	height: 9rem;
+	overflow: hidden;
+}
+
+.el-carousel-4 .wrap {
+	position: absolute;
+	width: 200%;
+	height: 100%;
+	font-size: 0;
+}
+.el-carousel-4 .transitions {
+	transition: transform 1s;
+}
+.el-carousel-4 .position {
+	transition: left 1s;
+}
+.el-carousel-4 .wrap > div {
+	float: left;
+	width: 50%;
+	height: 100%;
+}
+.el-carousel-4 .wrap > div > img {
+	position: absolute;
+	width: 50%;
+	height: 100%;
+	border-radius: 8px;
+}
+.el-carousel-4 .wrap > div > a {
+	position: absolute;
+	width: 50%;
+	height: 100%;
+	border-radius: 8px;
+}
+.el-carousel-4 .spanWrap {
+	z-index: 9999!important;
+	position: absolute;
+	width: 10rem;
+	height: 1rem;
+	font-size: 0;
+	display: flex;
+	bottom: 1rem;
+	justify-content: space-around;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.el-carousel-4 .spanWrap .span {
+	width: 1rem;
+	height: 1rem;
+	display: inline-block;
+	border-radius: 50%;
+	background-color: rgba(255, 255, 255,1);
+	opacity: 1;
+}
+
+.el-carousel-4 .spanWrap .check {
+	background-color: red !important;
+	opacity: 1 !important;
+}

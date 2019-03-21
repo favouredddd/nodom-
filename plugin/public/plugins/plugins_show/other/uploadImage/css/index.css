@@ -1,0 +1,73 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.content {
+	width: 600px;
+	height: 400px;
+	margin: 100px auto;
+}
+.content .wrap {
+	width: 100%;
+	height: 100%;
+}
+.content .wrap .imgs {
+	width: 100px;
+	height: 100px;
+	font-size: 0;
+	position: relative;
+	float: left;
+}
+.content .wrap .imgs img {
+	width: 100%;
+	height: 100%;
+}
+.content .wrap .imgs .cancle {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	top: 0px;
+	right: 0px;
+	background: url('../imgs/cancel.png') center center no-repeat;
+	background-size: cover;
+}
+.content .wrap .select {
+	width: 100px;
+	height: 100px;
+	position: relative;
+	display: block;
+	border: 1px dashed #008000;
+	float: left;
+}
+.content .wrap .select .file {
+	left: 0;
+	position: absolute;
+	z-index: 1000;
+	opacity: 0;
+	display: block;
+	width: 100px;
+	height: 100px;
+}
+.content .wrap .select .mask {
+	text-align: center;
+	width: 100px;
+	height: 100px;
+	color: green;
+	font-size: 100px;
+	z-index: 999;
+}
+.content .wrap .ensure {
+	display: flex;
+	align-items: flex-end;
+	float: left;
+	width: 100px;
+	height: 100px;
+	color: #fff;
+	cursor: pointer;
+}
+.content .wrap .ensure .upload {
+	width: 80px;
+	margin: 0 auto;
+	text-align: center;
+	background-color: #03a9f4;
+}

@@ -1,0 +1,60 @@
+.el-my-home {
+  overflow-x: hidden;
+}
+.el-my-home .canvasct {
+  width: 100%;
+  position: relative;
+  font-size: 0px;
+}
+.el-my-home .footer {
+  background-color: #666;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 5% 0;
+  font-size: 12px;
+  color: #FFF;
+}
+.el-my-home .footer .foot-img {
+  width: 300px;
+  font-size: 0px;
+  margin: 5px auto 20px;
+  overflow-x: hidden;
+}
+.el-my-home .footer .foot-img .imgct-left {
+  height: 200px;
+  width: 140px;
+  float: left;
+}
+.el-my-home .footer .foot-img .imgct-right {
+  height: 200px;
+  width: 140px;
+  float: right;
+}
+.el-my-home .footer .foot-img img {
+  width: 100%;
+  height: 100%;
+}
+.el-my-home .footer .link-href {
+  width: 300px;
+  margin: 0 auto;
+  overflow-x: hidden;
+  margin-bottom: 5px;
+}
+.el-my-home .footer .link-href .link-item {
+  cursor: pointer;
+  width: 100px;
+  line-height: 15px;
+  box-sizing: border-box;
+  float: left;
+  text-align: center;
+  height: 15px;
+  border-left: 2px solid #FFF;
+}
+.el-my-home .footer .link-href .border-none {
+  border: none!important;
+}
+.el-my-home .footer p {
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+}
